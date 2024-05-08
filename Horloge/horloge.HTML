@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="horloge.css">
+
+    <title>Horloge</title>
+</head>
+
+<body>
+    <h1 class="titre">Timer By Karim</h1>
+
+    <div class="container">
+
+        <div class="wrapper">
+            <p>
+                <span class="secondes">00</span>:
+                <span class="tens">00</span>
+            </p>
+            <button class="start">Start</button>
+            <button class="stop">Stop</button>
+            <button class="reset">Reset</button>
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    let seeconds = 00;
+    let tens = 00;
+    let my_seconds = document.querySelector('.secondes');
+    let my_tens = document.querySelector('.tens');
+    let starter = document.querySelector('.start');
+    let stoper = document.querySelector('.stop');
+    let reseter = document.querySelector('.reset');
+
+
+    starter.addEventListener('click', () => {
+        setInterval(start_timer, 10)
+
+    })
+
+    function start_timer() {
+
+
+        tens++;
+        if (tens <= 9) {
+            my_tens.innerHTML = '0' + tens;
+        }
+        if (tens > 9) {
+            my_tens.innerHTML = tens;
+        }
+        if (tens > 99) {
+            seeconds++;
+            my_seconds.innerHTML = '0' + seeconds;
+            tens = 0;
+            my_tens.innerHTML = '0' + 0;
+
+        }
+        if (seeconds > 9) {
+            my_seconds.innerHTML = seeconds;
+        }
+        if (seeconds > 99) {
+            my_seconds.innerHTML = '0' + 0;
+            my_tens.innerHTML = '0' + 0;
+        }
+    }
+    stoper.addEventListener('click', () => {
+        setInterval(stop_timer)
+    })
+
+    function stop_timer() {
+        my_tens = tens;
+        my_seconds = seeconds;
+
+    }
+
+    reseter.addEventListener('click', () => {
+        setInterval(reset_timer)
+    })
+
+    function reset_timer() {
+        seeconds = 0;
+        tens = 0;
+        my_tens.innerHTML = '0' + seeconds;
+        my_seconds.innerHTML = '0' + tens;
+
+    }
+
+
+</script>
+
+</html>

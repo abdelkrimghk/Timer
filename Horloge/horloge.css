@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght:@400;@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+
+.titre {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    top: 140px;
+    left: 600px;
+    background-color: #151538;
+    color: #fff;
+    text-shadow: 1px 1px 3px #219cf3, 0px 1px 4px #219cf3;
+    border: 2px solid #ffffff69;
+    padding: 15px 25px;
+    border-radius: 25px;
+    transition: 250ms ease;
+}
+
+.titre:hover,
+.titre:focus {
+    box-shadow: 0px 0px 1px lightgreen, 0px 1px 1px lightslategray, 1px 0px 1px 1px rgb(58, 213, 237);
+    text-shadow: 1px 1px 2px #219cf3, 0px 2px 2px #151538;
+}
+
+
+.container {
+    background-color: #151538;
+    position: relative;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.wrapper {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #151538;
+    left: 40%;
+    top: 40%;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #ffffff69;
+    border-radius: 250px;
+    box-shadow: 1px 1px 2px rgb(160, 31, 31), 1px 1px 2px silver, 1px 1px 1px 2px grey;
+    transition: all .3s ease;
+
+}
+
+
+.wrapper:hover,
+.wrapper:focus {
+    box-shadow: 1px 1px 2px lightgreen, 1px 1px 2px lightslategray, 1px 1px 1px 2px rgb(58, 213, 237);
+}
+
+.wrapper p {
+
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    font-size: 40px;
+    color: #f0f0f0;
+}
+
+.wrapper p .tens {
+    position: absolute;
+    left: 50px;
+
+}
+
+
+.wrapper .start {
+    position: absolute;
+    left: -30px;
+    top: 290px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid #ffffff69;
+    background-color: #151538;
+    color: #f0f0f0;
+    transition: all .2s ease;
+}
+
+.wrapper .stop {
+    position: absolute;
+    left: 95px;
+    top: 290px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid #ffffff69;
+    background-color: #151538;
+    color: #f0f0f0;
+    transition: all .2s ease;
+}
+
+.wrapper .reset {
+    position: absolute;
+    left: 220px;
+    top: 290px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid #ffffff69;
+    background-color: #151538;
+    color: #f0f0f0;
+    transition: all .2s ease;
+}
+
+
+.wrapper .start:hover,
+.wrapper .start:focus {
+
+    box-shadow: 1px 1px 2px #f0f0f0, 1px 1px 2px #219cf3;
+
+}
+
+.wrapper .reset:hover,
+.wrapper .reset:focus {
+
+    box-shadow: 1px 1px 2px #f0f0f0, 1px 1px 2px #219cf3;
+
+}
+
+.wrapper .stop:hover,
+.wrapper .stop:focus {
+
+    box-shadow: 1px 1px 2px #f0f0f0, 1px 1px 2px #219cf3;
+
+}
